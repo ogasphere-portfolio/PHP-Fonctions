@@ -1,0 +1,89 @@
+<h1 id="challenge--en-avant-les-fourneaux-">Challenge : En avant les fourneaux !</h1>
+<p>La chandeleur est arrivée et il vous faut la bonne quantité d'ingrédients pour faire pâte légère et onctueuse. Cependant, le nombre d'ingrédients dépend aussi de votre nombre convives. Nous ne traiterons pas ici de l'éternel débat entre crêpes et galettes, mais nous servirons de ce point de départ pour appliquer nos calculs de <em>"quantitée"</em> et <strong>travailler avec les fonctions utilisateur</strong>.</p>
+<p>Ainsi, vous pourrez vous-même choisir votre nombre d'invités (c'est quand même mieux :D)</p>
+<p><strong>Instructions</strong></p>
+<p>Dans un script PHP, pour <em>chaque formule</em> ci-dessous :</p>
+<p>Créer une fonction qui prend en paramètre les données nécessaires au calcul</p>
+<p>Cette fonction va renvoyer <em>une valeur</em> de retour qui correspond à ce qui est attendu dans les intitulés suivant:</p>
+<ol>
+<li>Le nombre d'invités</li>
+<li>La quantité totale d'ingrédients</li>
+<li>Le poids en Oz</li>
+<li>Le poids en livres</li>
+<li>Le nombre de calories consommées par l'ensemble des invités</li>
+<li>Niveau d'alerte aux discussions houleuses</li>
+</ol>
+<p>Puis :</p>
+<ul>
+<li><p>Afficher à l'écran la liste de tous les paramètres utilisés pour tous les calculs (l'ensemble des variables nécessaires à la recette)</p></li>
+<li><p>Afficher à l'écran l'intitulé de chaque calcul (h1 ou h2), puis son résultat (p).</p></li>
+</ul>
+<p>On considerera la recette suivante pour 16 crêpes (2 par personne) soit :</p>
+<ul>
+<li>250 g de farine</li>
+<li>4 oeufs</li>
+<li>50 cl litre de lait</li>
+<li>1 pincée de sel</li>
+<li>50 g de beurre</li>
+<li>1 sachet de sucre vanillé</li>
+<li>1 cuillère à soupe de fleur d'oranger</li>
+</ul>
+<h2 id="nombre-dinvités">Nombre d'invités</h2>
+<ul>
+<li><p>La recette n'est pas probante pour moins de 8 personnes</p></li>
+<li><p>Vous ne pouvez pas recevoir plus 20 personnes à table, parce que ça fait déjà beaucoup ;)</p></li>
+</ul>
+<blockquote>
+  <p>On affichera, par exemple un message selon le contexte du type :<br />
+  Il n'y a pas assez d'invités …</p>
+</blockquote>
+<h2 id="quantité-totale-dingrédients">Quantité totale d'ingrédients</h2>
+<p>Selon le nombre de personnes présentes, il vous faudra multiplier les quantités par un coefficient :</p>
+<ul>
+<li>8 = 1</li>
+<li>8  &gt; personnes &lt; 11 = 1.5</li>
+<li>11 &gt;= personnes &lt; 14 = 1.80</li>
+<li>14 &gt;= personnes &lt; 16 = 2</li>
+<li>16 &gt;= personnes &lt;= 20 = 4</li>
+</ul>
+<blockquote>
+  <p>On affichera, par exemple :<br />
+  farine (g) : 500<br />
+  oeufs : 8<br />
+  lait (cl) : 100<br />
+  Pincée de sel : 2<br />
+  beurre (g) : 100<br />
+  sachet de sucre vanillé : 2<br />
+  cuillère à soupe de fleur d'oranger : 2</p>
+</blockquote>
+<h2 id="poids-en-oz">Poids en Oz</h2>
+<ul>
+<li>Un oz représente 28g</li>
+</ul>
+<h2 id="poids-en-livres">Poids en livres</h2>
+<ul>
+<li>Un gramme représente un millième de kilogramme</li>
+<li>Une livre vaux 0,453 kilogramme</li>
+</ul>
+<h2 id="nombre-de-calories-consommées-par-lensemble-des-invités">Nombre de calories consommées par l'ensemble des invités</h2>
+<ul>
+<li>Il y a deux crêpes par personne</li>
+<li>Une crêpe représente 60 kcal</li>
+</ul>
+<h2 id="niveau-dalerte-aux-discussions-houleuses">Niveau d'alerte aux discussions houleuses</h2>
+<p>Ce risque est complètement <em>aléatoire</em> et ne dépend que de l'humeur de vos convives.</p>
+<p>Ce niveau d'alerte est représenté par cette échelle :</p>
+<ul>
+<li>0 = 'J'ai trop mangé, je vais bien dormir ce soir!';</li>
+<li>1 = 'Mamie fait mieux les crêpes que toi.';</li>
+<li>2 = 'C'était pas si mal quand M. X était président.';</li>
+<li>3 = 'Le Mont Saint-Michel appartient à la Bretagne.';</li>
+<li>4 = 'Je suis ton père.';</li>
+<li>5 = 'Tu es sûr que ce sont des crêpes ?!';</li>
+</ul>
+<blockquote>
+  <p>On affichera, par exemple :<br />
+  Risque de niveau 0 : J'ai trop mangé, je vais bien dormir ce soir !</p>
+</blockquote>
+<h3 id="exemple-de-rendu">Exemple de rendu</h3>
+<p><kbd><img src="/rendu/chandeleur.png" alt="" /></kbd></p>
